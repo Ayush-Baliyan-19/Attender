@@ -2,6 +2,7 @@
   "name": "lamadmin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ayush-baliyan-19.github.io/attender/",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -12,6 +13,7 @@
     "@testing-library/react": "^12.1.3",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.8.1",
+    "gh-pages": "^4.0.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.4.0",
     "react-circular-progressbar": "^2.0.4",
@@ -25,6 +27,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
